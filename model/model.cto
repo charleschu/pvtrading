@@ -1,0 +1,115 @@
+
+namespace org.acme.pv.auction
+
+/**
+ * The state of a KWlisting
+ */
+enum KwlistingState {
+  o ACCEPT_OFFERS
+  o AUCTION_CLOSED
+  o FOR_SALE //Notice: Add by the article code
+}
+
+//**************Start of asset*****************************
+/**
+ * A PV being registered as an asset on the ledger
+ */
+asset PV identified by PVid {
+  o String PVid
+  o String owner
+}
+
+/**
+ * KWhlisting
+ */
+asset KWhlisting identified by listingid {
+  o String listingid
+  o String state  // NOTICE: Value is as: KwlistingState
+  o PVOffer[] pvoffers
+  o BUYOffer[] buyoffers
+
+}
+
+
+
+//**************End of asset*****************************
+
+
+//**************Start of Pariticipiant*****************************
+
+/**
+ * An abstract participant type in this PV network
+ */
+participant Member identified by email {
+  o String email
+  o String firstName
+  o String lastName
+  o Double balance
+}
+
+/**
+ * A Seller is a type of participant in the network
+ */
+//participant Seller extends Homeowner {
+//}
+
+/**
+ * A Buyer is a type of participant in the network
+ */
+//participant Buyer extends Homeowner {
+//}
+//**************End of Pariticipiant*****************************
+
+
+
+
+
+//**************Start of transaction*****************************
+/**
+ * An abstract transaction that is related to a KWhlisting
+ */
+//abstract transaction PVTransaction {
+  //--> KWhlisting kwhlisting
+//}
+
+transaction AcceptOfferBroadcast  {
+  //--> KWhlisting listingid
+  // Create a listingid in
+}
+
+transaction PVOffer    {
+  o Double reservePrice
+  o Double kWhavailable
+  --> KWhlisting listingid
+  --> Member pv
+}
+
+transaction BUYOffer  {
+  o Double BidPrice
+  o Double kWhQuantity
+  --> KWhlisting listingid
+  --> Member member
+}
+
+transaction CloseBidding  {
+  --> KWhlisting listingid
+}
+//**************End of transaction*****************************
+
+//**************Start of Event*****************************
+/**
+ * An event - when the temperature goes outside the agreed-upon boundaries
+ */
+event StartOfferEvent {
+  o String message
+  --> KWhlisting kwhlisting
+}
+
+/**
+ * An event - when the ship arrives at the port
+ */
+event EndOfferEvent {
+  o String message
+  --> KWhlisting kwhlisting
+}
+//**************End of event *****************************
