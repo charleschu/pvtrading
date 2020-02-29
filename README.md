@@ -1,6 +1,6 @@
 # Pvtrading
 
-
+## Introduction:
 * This is the implemetaion code of a paper:  [A Blockchain-based Platform for Exchange of Solar Energy: Laboratory-scale Implementatio](https://ieeexplore.ieee.org/document/8635679)
 * Base on Hyperleder Fabric1.1, composr@0.19.0, composer-cli@0.19.0, composer-rest-server@0.19.0
 * The model file is the definition of composer elements: assets, tranactions, participiants. use CTO language.
@@ -8,8 +8,7 @@
 * The test envoirment is : Ubuntu 16.04.6 LTS, 1CPU, 2GB MEM.
 * All of the demo data is from the paper, you can try to test and compare with the paper result.
 
-##This is the simple envoirment setup recoard:
-
+## This is the simple envoirment setup recoard:
 参考: https://hyperledger.github.io/composer/v0.16/installing/development-tools.html
 1. 安装 Composer 命令行接口 (CLI)
 
@@ -89,9 +88,9 @@ docker rmi $(docker images dev-* -q)
 ```
 
 
-## 一些问题，一开始使用的的是composer0.20 以上的版本，以及fabric 1.2 在composer network start的时候出来问题
+## Some setup problems:
 
-
+一开始使用的的是composer0.20 以上的版本，以及fabric 1.2 在composer network start的时候出来问题
 全体切换到 composer 1.9 以及fabric1.1
 1.composer-cli 1.9    sudo npm install -g composer-cli@0.19.0 —unsafe
 2.comoser-reset-server  sudo npm install -g composer-cli@0.19.0 —unsafe
