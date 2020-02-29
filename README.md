@@ -8,7 +8,7 @@
 * The test envoirment is : Ubuntu 16.04.6 LTS, 1CPU, 2GB MEM.
 * All of the demo data is from the paper, you can try to test and compare with the paper result.
 
-## This is the simple envoirment setup recoard:
+## Envoirment setup:
 参考: https://hyperledger.github.io/composer/v0.16/installing/development-tools.html
 1. 安装 Composer 命令行接口 (CLI)
 
