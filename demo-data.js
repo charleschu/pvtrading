@@ -1,31 +1,40 @@
 //Sellers
 {
-  "$class": "org.acme.pv.auction.Member", "balance": 200,
+  "$class": "org.acme.pv.auction.Member",
+  "balance": 200,
   "email": "seller1@vt.edu",
-  "firstName": "seller1", "lastName": "seller1"
+  "firstName": "seller1",
+  "lastName": "seller1"
 }
 
 {
-  "$class": "org.acme.pv.auction.Member", "balance": 200,
+  "$class": "org.acme.pv.auction.Member",
+  "balance": 200,
   "email": "seller2@vt.edu",
-  "firstName": "seller2", "lastName": "seller2"
+  "firstName": "seller2",
+  "lastName": "seller2"
 }
 
 //Buyer
 {
-  "$class": "org.acme.pv.auction.Member", "balance": 200,
+  "$class": "org.acme.pv.auction.Member",
+  "balance": 200,
   "email": "buyer1@vt.edu",
-  "firstName": "buyer1", "lastName": "buyer1"
+  "firstName": "buyer1",
+  "lastName": "buyer1"
 }
 
 {
-  "$class": "org.acme.pv.auction.Member", "balance": 200,
+  "$class": "org.acme.pv.auction.Member",
+  "balance": 200,
   "email": "buyer2@vt.edu",
-  "firstName": "buyer2", "lastName": "buyer2"
+  "firstName": "buyer2",
+  "lastName": "buyer2"
 }
 
 {
-  "$class": "org.acme.pv.auction.Member", "balance": 200,
+  "$class": "org.acme.pv.auction.Member",
+  "balance": 200,
   "email": "buyer3@vt.edu",
   "firstName": "buyer3", "lastName": "buyer3"
 }
@@ -34,13 +43,18 @@
 {
   "$class": "org.acme.pv.auction.PV",
   "PVid": "seller1house",
-  "owner": "resource:org.acme.pv.auction.Member# seller1@vt.edu"
+  "owner": "resource:org.acme.pv.auction.Member#seller1@vt.edu"
 }
 
 {
   "$class": "org.acme.pv.auction.PV",
   "PVid": "seller2house",
-  "owner": "resource:org.acme.pv.auction.Member# seller2@vt.edu"
+  "owner": "resource:org.acme.pv.auction.Member#seller2@vt.edu"
+}
+
+//AcceptOfferBroadcast
+{
+  "$class": "org.acme.pv.auction.AcceptOfferBroadcast"
 }
 
 //pvoffer
