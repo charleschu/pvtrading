@@ -30,42 +30,62 @@
   "firstName": "buyer3", "lastName": "buyer3"
 }
 
+//pv
+{
+  "$class": "org.acme.pv.auction.PV",
+  "PVid": "seller1house",
+  "owner": "resource:org.acme.pv.auction.Member# seller1@vt.edu"
+}
+
+{
+  "$class": "org.acme.pv.auction.PV",
+  "PVid": "seller2house",
+  "owner": "resource:org.acme.pv.auction.Member# seller2@vt.edu"
+}
+
 //pvoffer
-{ "$class": "org.acme.pv.auction.PVOffer",
-"reservePrice": 0,
-"kWhavailable": 6,
-"listingid": "resource:org.acme.pv.auction.KWhlisting#01Mar2020-16:00",
- "pv": "resource:org.acme.pv.auction.Member#seller1@vt.edu"
+{
+  "$class": "org.acme.pv.auction.PVOffer",
+  "reservePrice": 0,
+  "kWhavailable": 6,
+  "listingid": "resource:org.acme.pv.auction.KWhlisting#01Mar2020-16:00",
+   "pv": "resource:org.acme.pv.auction.Member#seller1@vt.edu"
  }
 
- {"$class": "org.acme.pv.auction.PVOffer",
-"reservePrice": 0,
-"kWhavailable": 6,
-"listingid": "resource:org.acme.pv.auction.KWhlisting#01Mar2020-16:00",
- "pv": "resource:org.acme.pv.auction.Member#seller2@vt.edu"
+ {
+  "$class": "org.acme.pv.auction.PVOffer",
+  "reservePrice": 0,
+  "kWhavailable": 6,
+  "listingid": "resource:org.acme.pv.auction.KWhlisting#01Mar2020-16:00",
+  "pv": "resource:org.acme.pv.auction.Member#seller2@vt.edu"
 }
 
 
 
 //buyoffers
 
-{"$class": "org.acme.pv.auction.BUYOffer",
-"BidPrice": 3,
-"kWhQuantity": 5,
-"listingid": "resource:org.acme.pv.auction.KWhlisting#01Mar2020-16:00", "member": "resource:org.acme.pv.auction.Member#buyer1@vt.edu"
+{
+  "$class": "org.acme.pv.auction.BUYOffer",
+  "BidPrice": 3,
+  "kWhQuantity": 5,
+  "listingid": "resource:org.acme.pv.auction.KWhlisting#01Mar2020-16:00",
+  "member": "resource:org.acme.pv.auction.Member#buyer1@vt.edu"
 }
 
-{"$class": "org.acme.pv.auction.BUYOffer",
-"BidPrice": 3,
-"kWhQuantity": 3,
-"listingid": "resource:org.acme.pv.auction.KWhlisting#01Mar2020-16:00",
-"member": "resource:org.acme.pv.auction.Member#buyer2@vt.edu"}
+{
+  "$class": "org.acme.pv.auction.BUYOffer",
+  "BidPrice": 3,
+  "kWhQuantity": 3,
+  "listingid": "resource:org.acme.pv.auction.KWhlisting#01Mar2020-16:00",
+  "member": "resource:org.acme.pv.auction.Member#buyer2@vt.edu"
+}
 
-{"$class": "org.acme.pv.auction.BUYOffer",
-"BidPrice": 3,
-"kWhQuantity": 1,
-"listingid": "resource:org.acme.pv.auction.KWhlisting#01Mar2020-16:00",
-"member": "resource:org.acme.pv.auction.Member#buyer3@vt.edu"
+{
+  "$class": "org.acme.pv.auction.BUYOffer",
+  "BidPrice": 3,
+  "kWhQuantity": 1,
+  "listingid": "resource:org.acme.pv.auction.KWhlisting#01Mar2020-16:00",
+  "member": "resource:org.acme.pv.auction.Member#buyer3@vt.edu"
 }
 
 
